@@ -15,7 +15,7 @@ and measures of conditional mean dependence and tests of conditional mean indepe
 
 The three main parts are:
 \itemize{
-  \item dependence measures via energy statistics
+  \item mutual dependence measures via energy statistics
   \itemize{   
    \item measuring mutual dependence
     \item testing mutual independence
@@ -32,7 +32,7 @@ The three main parts are:
   }
 }
 }
-\section{Dependence Measures via Energy Statistics}{
+\section{Mutual Dependence Measures via Energy Statistics}{
 
 \strong{Measuring mutual dependence}
 

@@ -9,7 +9,7 @@ independent component analysis methods based on mutual dependence measures,
 and measures of conditional mean dependence and tests of conditional mean independence. 
 
 The three main parts are:
-- dependence measures via energy statistics
+- mutual dependence measures via energy statistics
   - measuring mutual dependence
   - testing mutual independence
 - independent component analysis via mutual dependence measures
@@ -19,7 +19,7 @@ The three main parts are:
   - measuring conditional mean dependence
   - testing conditional mean independence
 
-## Dependence Measures via Energy Statistics
+## Mutual Dependence Measures via Energy Statistics
 
 ### Measuring mutual dependence
 

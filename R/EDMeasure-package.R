@@ -6,7 +6,7 @@
 #'
 #' The three main parts are:
 #' \itemize{
-#'   \item dependence measures via energy statistics
+#'   \item mutual dependence measures via energy statistics
 #'   \itemize{   
 #'	   \item measuring mutual dependence
 #'     \item testing mutual independence
@@ -23,7 +23,7 @@
 #'   }
 #' }
 #'
-#' @section Dependence Measures via Energy Statistics:
+#' @section Mutual Dependence Measures via Energy Statistics:
 #' \strong{Measuring mutual dependence}
 #'
 #' The mutual dependence measures include: 
