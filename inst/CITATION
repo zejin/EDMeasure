@@ -1,0 +1,16 @@
+citHeader("To cite EDMeasure in publications use:")
+
+citEntry(entry = "Manual",
+  title        = "EDMeasure: Dependence Measures via Energy Statistics",
+  author       = personList(as.person("Ze Jin"),
+                   as.person("Shun Yao"),
+                   as.person("David S. Matteson"),
+                   as.person("Xiaofeng Shao")),
+  year         = "2018",
+  note         = "R package version 1.0.",
+
+  textVersion  =
+  paste("Ze Jin, Shun Yao, David S. Matteson, and Xiaofeng Shao (2018).",
+        "EDMeasure: Dependence Measures via Energy Statistics.",
+        "R package version 1.0.")
+)
