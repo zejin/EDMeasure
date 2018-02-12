@@ -17,7 +17,7 @@ If omitted, an adaptive number is used.}
 \itemize{
   \item \code{asym}: asymmetric measure \eqn{\mathcal{R}_n} based on distance covariance 
     \eqn{\mathcal{V}_n};
-  \item \code{sym}: symmectric measure \eqn{\mathcal{S}_n} based on distance covariance 
+  \item \code{sym}: symmetric measure \eqn{\mathcal{S}_n} based on distance covariance 
     \eqn{\mathcal{V}_n};
   \item \code{comp}: simplified complete measure \eqn{\mathcal{Q}_n^\star} based on 
     incomplete V-statistics;

@@ -44,7 +44,7 @@ The mutual independence tests based on the mutual dependence measures are implem
 The mutual dependence measures include:
 - distance-based energy statistics 
   - asymmetric measure based on distance covariance
-  - symmectric measure based on distance covariance
+  - symmetric measure based on distance covariance
   - simplified complete measure based on incomplete V-statistics
 - kernel-based maximum mean discrepancies
   - d-variable Hilbert−Schmidt independence criterion based on 

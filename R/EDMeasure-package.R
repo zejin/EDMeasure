@@ -53,7 +53,7 @@
 #'   \item distance-based energy statistics
 #'   \itemize{
 #'     \item asymmetric measure \eqn{\mathcal{R}_n} based on distance covariance \eqn{\mathcal{V}_n}
-#'     \item symmectric measure \eqn{\mathcal{S}_n} based on distance covariance \eqn{\mathcal{V}_n}
+#'     \item symmetric measure \eqn{\mathcal{S}_n} based on distance covariance \eqn{\mathcal{V}_n}
 #'     \item simplified complete measure \eqn{\mathcal{Q}_n^\star} based on incomplete V-statistics
 #'   }
 #' }
