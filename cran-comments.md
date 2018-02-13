@@ -1,3 +1,7 @@
+## Resubmission
+This is a resubmission. In this version I have:
+* Fixed the arXiv ids in the 'Description' field of DESCRIPTION file. 
+
 ## Test environments
 * local Windows 10 install, R 3.4.3
 * rocks 6.0 with CentOS 6.2, R 3.4.0

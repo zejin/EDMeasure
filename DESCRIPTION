@@ -9,9 +9,9 @@ Authors@R: c(
     person("Xiaofeng", "Shao", email = "xshao@illinois.edu", role = c("aut"))
     )
 Description: Implementations of (1) mutual dependence measures and mutual independence tests in 
-    Jin, Z., and Matteson, D. S. (2017) <arXiv:1709.0253>;
+    Jin, Z., and Matteson, D. S. (2017) <arXiv:1709.02532>;
     (2) independent component analysis methods based on mutual dependence measures in 
-    Jin, Z., and Matteson, D. S. (2017) <arXiv:1709.0253> 
+    Jin, Z., and Matteson, D. S. (2017) <arXiv:1709.02532> 
     and Pfister, N., et al. (2018) <doi:10.1111/rssb.12235>;
     (3) conditional mean dependence measures and conditional mean independence tests in 
     Shao, X., and Zhang, J. (2014) <doi:10.1080/01621459.2014.887012> 
