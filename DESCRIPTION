@@ -1,6 +1,6 @@
 Package: EDMeasure
 Title: Dependence Measures via Energy Statistics
-Version: 1.0.0
+Version: 1.1.0
 Date: 2018-01-30
 Authors@R: c(
     person("Ze", "Jin", email = "zj58@cornell.edu", role = c("aut", "cre")),
