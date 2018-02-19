@@ -8,9 +8,6 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
 /* .C calls */
-extern void dCov(double *X, double *Y, double *XX, double *YY, double *V, int *NOBS, int *NDIMX, int *NDIMY);
-extern void dCov_perm(double *XX, double *YY, double *V, int *NOBS, int *IPERM);
-
 extern void dCov_asymmetric(double *X, double *D, double *V, int *NOBS, int *NDIM, int *NCOMP, int *ICOMP);
 extern void dCov_asymmetric_perm(double *D, double *V, int *NOBS, int *NCOMP, int *IPERM);
 
@@ -35,12 +32,10 @@ extern void MDM_symmetric_perm(double *D, double *V, int *NOBS, int *NCOMP, int 
 extern void MDM_symmetric_simple(double *X, double *D, double *V, int *NOBS, int *NDIM, int *NCOMP, int *ICOMP);
 extern void MDM_symmetric_simple_perm(double *D, double *V, int *NOBS, int *NCOMP, int *IPERM);
 
-extern void MDD_UCenter(int *N, int *P, int *Q, double *X, double *Y, double *O);
-extern void MDD_DCenter(int *N, int *P, int *Q, double *X, double *Y, double *O);
+extern void MDD_UCenter(int *N, int *P, int *Q, double *X, double *Y, double *V);
+extern void MDD_DCenter(int *N, int *P, int *Q, double *X, double *Y, double *V);
 
 static const R_CMethodDef CEntries[] = {
-  {"dCov",                       (DL_FUNC) &dCov,                       8},
-  {"dCov_perm",                  (DL_FUNC) &dCov_perm,                  5},
   {"dCov_asymmetric",            (DL_FUNC) &dCov_asymmetric,            7},
   {"dCov_asymmetric_perm",       (DL_FUNC) &dCov_asymmetric_perm,       5},
   {"dCov_symmetric",             (DL_FUNC) &dCov_symmetric,             7},

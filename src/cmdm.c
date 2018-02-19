@@ -1,5 +1,6 @@
+#include <R.h>
+#include <Rmath.h>
 #include <string.h>
-#include <math.h>
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 ///// declarations
@@ -16,17 +17,17 @@ extern double inner_UCenter_boot(int n, double *W, double *M);
 extern double inner_DCenter_boot(int n, double *W, double *M);
 
 /* MDD */
-void MDD_UCenter(int *N, int *P, int *Q, double *X, double *Y, double *O);
-void MDD_DCenter(int *N, int *P, int *Q, double *X, double *Y, double *O);
+void MDD_UCenter(int *N, int *P, int *Q, double *X, double *Y, double *V);
+void MDD_DCenter(int *N, int *P, int *Q, double *X, double *Y, double *V);
 
-void MDD_UCenter_boot(int *N, double *W, double *M, double *O);
-void MDD_DCenter_boot(int *N, double *W, double *M, double *O);
+void MDD_UCenter_boot(int *N, double *W, double *M, double *V);
+void MDD_DCenter_boot(int *N, double *W, double *M, double *V);
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 ///// conditional mean dependence measures
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
-void MDD_UCenter(int *N, int *P, int *Q, double *X, double *Y, double *O) {
+void MDD_UCenter(int *N, int *P, int *Q, double *X, double *Y, double *V) {
   int n = N[0];
   int p = P[0];
   int q = Q[0];
@@ -40,10 +41,10 @@ void MDD_UCenter(int *N, int *P, int *Q, double *X, double *Y, double *O) {
   UCenter_X(n, p, X, XX);
   UCenter_Y(n, q, Y, YY);
 
-  O[0] = inner_UCenter(n, XX, YY);
+  V[0] = inner_UCenter(n, XX, YY);
 }
 
-void MDD_DCenter(int *N, int *P, int *Q, double *X, double *Y, double *O) {
+void MDD_DCenter(int *N, int *P, int *Q, double *X, double *Y, double *V) {
   int n = N[0];
   int p = P[0];
   int q = Q[0];
@@ -57,19 +58,19 @@ void MDD_DCenter(int *N, int *P, int *Q, double *X, double *Y, double *O) {
   DCenter_X(n, p, X, XX);
   DCenter_Y(n, q, Y, YY);
 
-  O[0] = inner_DCenter(n, XX, YY);
+  V[0] = inner_DCenter(n, XX, YY);
 }
 
-void MDD_UCenter_boot(int *N, double *W, double *M, double *O) {
+void MDD_UCenter_boot(int *N, double *W, double *M, double *V) {
   int n = N[0];
 
-  O[0] = inner_UCenter_boot(n, W, M);
+  V[0] = inner_UCenter_boot(n, W, M);
 }
 
-void MDD_DCenter_boot(int *N, double *W, double *M, double *O) {
+void MDD_DCenter_boot(int *N, double *W, double *M, double *V) {
   int n = N[0];
   
-  O[0] = inner_DCenter_boot(n, W, M);
+  V[0] = inner_DCenter_boot(n, W, M);
 }
 
 

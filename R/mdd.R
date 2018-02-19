@@ -71,8 +71,8 @@ mdd <- function(X, Y, compute = "C", center = "U") {
                 Q = as.integer(q),
                 X = as.double(X),
                 Y = as.double(Y),
-                O = as.double(numeric(1)),
-                PACKAGE = "EDMeasure")$O
+                V = as.double(numeric(1)),
+                PACKAGE = "EDMeasure")$V
     } else if (center == "D") {
       mdd <- .C("MDD_DCenter",
                 N = as.integer(n),
@@ -80,8 +80,8 @@ mdd <- function(X, Y, compute = "C", center = "U") {
                 Q = as.integer(q),
                 X = as.double(X),
                 Y = as.double(Y),
-                O = as.double(numeric(1)),
-                PACKAGE = "EDMeasure")$O
+                V = as.double(numeric(1)),
+                PACKAGE = "EDMeasure")$V
     } else {
       stop("Invalid center. Read ?mdd for proper syntax.")
     }
