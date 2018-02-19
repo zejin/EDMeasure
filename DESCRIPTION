@@ -1,6 +1,6 @@
 Package: EDMeasure
-Title: Dependence Measures via Energy Statistics
-Version: 1.1.0
+Title: Energy-based Dependence Measures
+Version: 1.2.0
 Date: 2018-01-30
 Authors@R: c(
     person("Ze", "Jin", email = "zj58@cornell.edu", role = c("aut", "cre")),
@@ -14,8 +14,9 @@ Description: Implementations of (1) mutual dependence measures and mutual indepe
     Jin, Z., and Matteson, D. S. (2017) <arXiv:1709.02532> 
     and Pfister, N., et al. (2018) <doi:10.1111/rssb.12235>;
     (3) conditional mean dependence measures and conditional mean independence tests in 
-    Shao, X., and Zhang, J. (2014) <doi:10.1080/01621459.2014.887012> 
-    and Park, T., et al. (2015) <doi:10.1214/15-EJS1047>.
+    Shao, X., and Zhang, J. (2014) <doi:10.1080/01621459.2014.887012>,
+    Park, T., et al. (2015) <doi:10.1214/15-EJS1047>,
+    and Lee, C. E., and Shao, X. (2017) <doi:10.1080/01621459.2016.1240083>.
 Depends: 
     R (>= 3.4.0)
 Imports:
@@ -34,6 +35,7 @@ Collate:
     'mdd.R'
     'cmdm_test.R'
     'mdc.R'
+    'mddm.R'
     'mdm.R'
     'mdm_ica_functions.R'
     'mdm_ica.R'

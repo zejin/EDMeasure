@@ -5,7 +5,7 @@
 ///// declarations
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
-/* functions.c */
+/* cmdm_functions.c */
 extern void UCenter_X(int n, int p, double *X, double *XX);
 extern void DCenter_X(int n, int p, double *X, double *XX);
 extern void UCenter_Y(int n, int q, double *Y, double *YY);
@@ -71,4 +71,7 @@ void MDD_DCenter_boot(int *N, double *W, double *M, double *O) {
   
   O[0] = inner_DCenter_boot(n, W, M);
 }
+
+
+
 

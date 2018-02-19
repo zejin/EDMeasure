@@ -66,7 +66,8 @@ The conditional mean dependence measures include:
 - conditional mean dependence of Y given X
   - martingale difference divergence
   - martingale difference correlation
-- conditional mean dependence of Y given X conditioning on Z
+  - martingale difference divergence matrix
+- conditional mean dependence of Y given X adjusting for the dependence on Z
   - partial martingale difference divergence
   - partial martingale difference correlation
 

@@ -2,11 +2,26 @@
 
 - Initial commit.
 
-- Add R functions: mutual dependence measures/mutual independence tests, independent component analysis based on mutual dependence measures, conditional mean dependence measures/conditional mean independence tests. 
+- Add R functions: 
+  - mutual dependence measures: mdm
+  - mutual independence tests: mdm_test
+  - independent component analysis based on mutual dependence measures: mdm_ica
+  - conditional mean dependence measures: mdd, mdc, pmdd, pmdc
+  - conditional mean independence tests: cmdm_test
 
-- Add R tests: mutual dependence measures, independent component analysis based on mutual dependence measures, conditional mean dependence measures.
+- Add R tests: 
+  - mutual dependence measures: test-mdm
+  - independent component analysis based on mutual dependence measures: test-mdm-ica
+  - conditional mean dependence measures: test-mdd
 
 # EDMeasure 1.1.0
 
-- Fix the arXiv ids in the Description field of DESCRIPTION file. 
+- Fix the arXiv IDs in the Description field of the DESCRIPTION file. 
 
+# EDMeasure 1.2.0
+
+- Add R functions: 
+  - conditional mean dependence measures: mddm
+
+- Add R tests: 
+  - conditional mean dependence measures: test-mddm

@@ -2,7 +2,7 @@ context("mdd")
 
 # setup
 num_obs <- 10
-num_comp <- 5
+num_comp <- 2
 
 test_that("mdd C vs. mdd R univariate X univariate Y", {
   X <- rnorm(num_obs)

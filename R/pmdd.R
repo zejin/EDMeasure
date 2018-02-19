@@ -1,13 +1,15 @@
 #' Partial Martingale Difference Divergence
 #'
-#' \code{pmdd} measures conditional mean dependence of \code{Y} given \code{X} conditioning on \code{Z},
-#' where each contains one variable (univariate) or more variables (multivariate).
+#' \code{pmdd} measures conditional mean dependence of \code{Y} given \code{X} adjusting for the 
+#' dependence on \code{Z}, where each contains one variable (univariate) or more variables (multivariate).
+#' Only the U-centering approach is applied.
 #'
 #' @param X A vector, matrix or data frame, where rows represent samples, and columns represent variables.
 #' @param Y A vector, matrix or data frame, where rows represent samples, and columns represent variables.
 #' @param Z A vector, matrix or data frame, where rows represent samples, and columns represent variables.
 #'
-#' @return \code{pmdd} returns the value of squared partial martingale difference divergence.
+#' @return \code{pmdd} returns the squared partial martingale difference divergence
+#'   of \code{Y} given \code{X} adjusting for the dependence on \code{Z}.
 #'
 #' @references Park, T., Shao, X., and Yao, S. (2015).
 #'   Partial martingale difference correlation.

@@ -18,7 +18,7 @@ mdc(X, Y, center = "U")
 }}
 }
 \value{
-\code{mdc} returns the value of squared martingale difference correlation.
+\code{mdc} returns the squared martingale difference correlation of \code{Y} given \code{X}.
 }
 \description{
 \code{mdc} measures conditional mean dependence of \code{Y} given \code{X},

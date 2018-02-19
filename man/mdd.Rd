@@ -24,7 +24,7 @@ mdd(X, Y, compute = "C", center = "U")
 }}
 }
 \value{
-\code{mdd} returns the value of squared martingale difference divergence.
+\code{mdd} returns the squared martingale difference divergence of \code{Y} given \code{X}.
 }
 \description{
 \code{mdd} measures conditional mean dependence of \code{Y} given \code{X},

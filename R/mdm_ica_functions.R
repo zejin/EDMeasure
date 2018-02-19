@@ -8,7 +8,7 @@ sym_obj <- function(S) {
   return(mdm(X = S, type = 'sym_dcov')$stat)
 }
 
-comp_obj <- function(S){
+comp_obj <- function(S) {
   S <- as.matrix(S)
   return(mdm(X = S, type = 'comp_simp')$stat)
 }

@@ -11,7 +11,7 @@
 #'   \item \code{D}: double-centering which leads to a biased estimator. 
 #' }
 #'
-#' @return \code{mdc} returns the value of squared martingale difference correlation.
+#' @return \code{mdc} returns the squared martingale difference correlation of \code{Y} given \code{X}.
 #'
 #' @references Shao, X., and Zhang, J. (2014).
 #'   Martingale difference correlation and its use in high-dimensional variable screening.

@@ -4,9 +4,9 @@
 \name{EDMeasure-package}
 \alias{EDMeasure-package}
 \alias{EDMeasure}
-\title{Dependence Measures via Energy Statistics}
+\title{Energy-based Dependence Measures}
 \description{
-EDMeasure: A package for dependence measures via energy statistics
+EDMeasure: A package for energy-based dependence measures
 }
 \details{
 The EDMeasure package provides measures of mutual dependence and tests of mutual independence, 
@@ -96,10 +96,11 @@ The conditional mean dependence measures include:
   \itemize{
     \item martingale difference divergence
     \item martingale difference correlation
+    \item martingale difference divergence matrix
   }
 }
 \itemize{  
-  \item conditional mean dependence of \code{Y} given \code{X} conditioning on \code{Z}
+  \item conditional mean dependence of \code{Y} given \code{X} adjusting for the dependence on \code{Z}
   \itemize{
     \item partial martingale difference divergence
     \item partial martingale difference correlation

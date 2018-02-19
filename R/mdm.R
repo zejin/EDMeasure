@@ -26,6 +26,7 @@
 #'   \item \code{sym_comp_simp}: simplified symmetric measure \eqn{\mathcal{I}_n^\star} based on
 #'     simplified complete measure \eqn{\mathcal{Q}_n^\star}.
 #' }
+#' From experiments, \code{asym_dcov}, \code{sym_dcov}, \code{comp_simp} are recommended.
 #'
 #' @return \code{mdm} returns a list including the following components:
 #' \item{stat}{The value of the mutual dependence measure.}

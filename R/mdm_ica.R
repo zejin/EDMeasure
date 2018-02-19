@@ -69,8 +69,7 @@
 #' mdm_ica(X, type = "comp", num_bo = 1, kernel = "mat", algo = "par")
 #' }
 
-mdm_ica <- function(X, num_lhs = NULL, type = "comp", num_bo = NULL, kernel = "exp", algo = "par") 
-{
+mdm_ica <- function(X, num_lhs = NULL, type = "comp", num_bo = NULL, kernel = "exp", algo = "par") {
   X <- as.matrix(X)
   num_obs <- nrow(X)
   num_comp <- ncol(X)

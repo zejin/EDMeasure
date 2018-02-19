@@ -20,7 +20,7 @@ num_obs <- nrow(X)
 dim_comp <- c(1, 1, 1)
 num_dim <- sum(dim_comp)
 num_comp <- length(dim_comp)
-index_comp <- cumsum(c(1, dim_comp)) # start index and end index
+index_comp <- cumsum(c(1, dim_comp))
 X <- c(t(X))
 D <- rep(0, num_comp * num_obs * num_obs)
 

@@ -16,7 +16,7 @@
 #'   \item \code{D}: double-centering which leads to a biased estimator.
 #' }
 #'
-#' @return \code{mdd} returns the value of squared martingale difference divergence.
+#' @return \code{mdd} returns the squared martingale difference divergence of \code{Y} given \code{X}.
 #'
 #' @references Shao, X., and Zhang, J. (2014).
 #'   Martingale difference correlation and its use in high-dimensional variable screening.

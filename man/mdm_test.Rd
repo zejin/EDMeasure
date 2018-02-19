@@ -32,7 +32,8 @@ of mutual dependence measures. If omitted, an adaptive number is used.}
     \eqn{\mathcal{Q}_n}; 
   \item \code{sym_comp_simp}: simplified symmetric measure \eqn{\mathcal{I}_n^\star} based on
     simplified complete measure \eqn{\mathcal{Q}_n^\star}.
-}}
+}
+From experiments, \code{asym_dcov}, \code{sym_dcov}, \code{comp_simp} are recommended.}
 }
 \value{
 \code{mdm_test} returns a list including the following components:

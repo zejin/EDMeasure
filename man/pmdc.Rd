@@ -14,11 +14,13 @@ pmdc(X, Y, Z)
 \item{Z}{A vector, matrix or data frame, where rows represent samples, and columns represent variables.}
 }
 \value{
-\code{pmdc} returns the value of squared partial martingale difference correlation.
+\code{pmdc} returns the squared partial martingale difference correlation 
+  of \code{Y} given \code{X} adjusting for the dependence on \code{Z}.
 }
 \description{
-\code{pmdc} measures conditional mean dependence of \code{Y} given \code{X} conditioning on \code{Z},
-where each contains one variable (univariate) or more variables (multivariate).
+\code{pmdc} measures conditional mean dependence of \code{Y} given \code{X} adjusting for the 
+dependence on \code{Z}, where each contains one variable (univariate) or more variables (multivariate).
+Only the U-centering approach is applied.
 }
 \examples{
 # X, Y, Z are 10 x 2 matrices with 10 samples and 2 variables

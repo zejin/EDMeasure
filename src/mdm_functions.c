@@ -18,7 +18,7 @@ void next_index_incomplete(int *index, int nobs, int ncomp);
 ///// functions
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
-// X is a p x n matrix, XX is a n x n matrix
+// X is a p x n matrix, XX is an n x n matrix
 void double_center(int n, int p, double *X, double *XX) {
   double* row_sum = (double*) calloc(n, sizeof(double));
   double* col_sum = (double*) calloc(n, sizeof(double));
@@ -60,7 +60,7 @@ void double_center(int n, int p, double *X, double *XX) {
   free(col_sum);
 }
 
-// XX is a n x n matrix, YY is a n x n matrix
+// XX is an n x n matrix, YY is an n x n matrix
 double inner_prod(int n, double *XX, double *YY) {
   double sum = 0.0; 
   int i, j;
@@ -75,7 +75,7 @@ double inner_prod(int n, double *XX, double *YY) {
   return sum / n / n;
 }
 
-// XX is a n x n matrix, YY is a n x n matrix
+// XX is an n x n matrix, YY is an n x n matrix
 double inner_prod_perm(int n, int *P, double *XX, double *YY) {
   double sum = 0.0; 
   int i, j;

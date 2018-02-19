@@ -1,4 +1,4 @@
-#' EDMeasure: A package for dependence measures via energy statistics
+#' EDMeasure: A package for energy-based dependence measures
 #'
 #' The EDMeasure package provides measures of mutual dependence and tests of mutual independence, 
 #' independent component analysis methods based on mutual dependence measures,
@@ -82,10 +82,11 @@
 #'   \itemize{
 #'     \item martingale difference divergence
 #'     \item martingale difference correlation
+#'     \item martingale difference divergence matrix
 #'   }
 #' }
 #' \itemize{  
-#'   \item conditional mean dependence of \code{Y} given \code{X} conditioning on \code{Z}
+#'   \item conditional mean dependence of \code{Y} given \code{X} adjusting for the dependence on \code{Z}
 #'   \itemize{
 #'     \item partial martingale difference divergence
 #'     \item partial martingale difference correlation
@@ -111,7 +112,7 @@
 #'
 #' @docType package
 #'
-#' @title Dependence Measures via Energy Statistics
+#' @title Energy-based Dependence Measures
 #'
 #' @author Ze Jin \email{zj58@cornell.edu},
 #'   Shun Yao \email{shunyao2@illinois.edu}, \cr
