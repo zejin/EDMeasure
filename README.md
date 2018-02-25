@@ -1,8 +1,8 @@
 # EDMeasure
 
 [![Travis-CI Build Status](https://travis-ci.org/zejin/EDMeasure.svg?branch=master)](https://travis-ci.org/zejin/EDMeasure.svg?branch=master)
-[![](https://cranlogs.r-pkg.org/badges/grand-total/EDMeasure)](https://cran.r-project.org/web/packages/EDMeasure/index.html)
-[![](https://cranlogs.r-pkg.org/badges/EDMeasure)](https://cran.r-project.org/web/packages/EDMeasure/index.html)
+[![](https://cranlogs.r-pkg.org/badges/grand-total/EDMeasure)](https://CRAN.R-project.org/package=EDMeasure)
+[![](https://cranlogs.r-pkg.org/badges/EDMeasure)](https://CRAN.R-project.org/package=EDMeasure)
 
 ## Overview
 
