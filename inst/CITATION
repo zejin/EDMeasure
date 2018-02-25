@@ -1,7 +1,7 @@
 citHeader("To cite EDMeasure in publications use:")
 
 citEntry(entry = "Manual",
-  title        = "EDMeasure: Energy-based Dependence Measures",
+  title        = "EDMeasure: Energy-Based Dependence Measures",
   author       = personList(as.person("Ze Jin"),
                    as.person("Shun Yao"),
                    as.person("David S. Matteson"),
@@ -11,6 +11,6 @@ citEntry(entry = "Manual",
 
   textVersion  =
   paste("Ze Jin, Shun Yao, David S. Matteson, and Xiaofeng Shao (2018).",
-        "EDMeasure: Energy-based Dependence Measures.",
+        "EDMeasure: Energy-Based Dependence Measures.",
         "R package version 1.2.")
 )

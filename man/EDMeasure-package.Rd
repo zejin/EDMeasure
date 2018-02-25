@@ -4,7 +4,7 @@
 \name{EDMeasure-package}
 \alias{EDMeasure-package}
 \alias{EDMeasure}
-\title{Energy-based Dependence Measures}
+\title{Energy-Based Dependence Measures}
 \description{
 EDMeasure: A package for energy-based dependence measures
 }

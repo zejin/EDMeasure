@@ -58,7 +58,7 @@ mdd(X, Y, compute = "R", center = "U")
 mdc(X, Y, center = "U")
 pmdd(X, Y, Z)
 pmdc(X, Y, Z)
-mddm(X, Y)
+mddm(X, Y, compute = "R")
 
 # cd cmi/simulation/reference
 source('MDD/MDD.R')
