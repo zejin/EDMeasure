@@ -112,7 +112,7 @@
 #'
 #' @docType package
 #'
-#' @title Energy-based Dependence Measures
+#' @title Energy-Based Dependence Measures
 #'
 #' @author Ze Jin \email{zj58@cornell.edu},
 #'   Shun Yao \email{shunyao2@illinois.edu}, \cr
