@@ -35,6 +35,8 @@ extern void MDM_symmetric_simple_perm(double *D, double *V, int *NOBS, int *NCOM
 extern void MDD_UCenter(int *N, int *P, int *Q, double *X, double *Y, double *V);
 extern void MDD_DCenter(int *N, int *P, int *Q, double *X, double *Y, double *V);
 
+extern void MDDM(int *N, int *P, int *Q, double *X, double *Y, double *M);
+
 static const R_CMethodDef CEntries[] = {
   {"dCov_asymmetric",            (DL_FUNC) &dCov_asymmetric,            7},
   {"dCov_asymmetric_perm",       (DL_FUNC) &dCov_asymmetric_perm,       5},
@@ -54,6 +56,7 @@ static const R_CMethodDef CEntries[] = {
   {"MDM_symmetric_simple_perm",  (DL_FUNC) &MDM_symmetric_simple_perm,  5},
   {"MDD_UCenter",                (DL_FUNC) &MDD_UCenter,                6},
   {"MDD_DCenter",                (DL_FUNC) &MDD_DCenter,                6},
+  {"MDDM",                       (DL_FUNC) &MDDM,                       6},
   {NULL, NULL, 0}
 };
 

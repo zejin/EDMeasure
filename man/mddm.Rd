@@ -4,12 +4,18 @@
 \alias{mddm}
 \title{Martingale Difference Divergence Matrix}
 \usage{
-mddm(X, Y)
+mddm(X, Y, compute = "C")
 }
 \arguments{
 \item{X}{A vector, matrix or data frame, where rows represent samples, and columns represent variables.}
 
 \item{Y}{A vector, matrix or data frame, where rows represent samples, and columns represent variables.}
+
+\item{compute}{The method for computation, including
+\itemize{
+  \item \code{C}: computation implemented in C code;
+  \item \code{R}: computation implemented in R code.
+}}
 }
 \value{
 \code{mddm} returns the martingale difference divergence matrix of \code{Y} given \code{X}.
@@ -25,13 +31,15 @@ Only the double-centering approach is applied.
 X <- rnorm(10)
 Y <- rnorm(10)
 
-mddm(X, Y)
+mddm(X, Y, compute = "C")
+mddm(X, Y, compute = "R")
 
 # X, Y are 10 x 2 matrices with 10 samples and 2 variables
 X <- matrix(rnorm(10 * 2), 10, 2)
 Y <- matrix(rnorm(10 * 2), 10, 2)
 
-mddm(X, Y)
+mddm(X, Y, compute = "C")
+mddm(X, Y, compute = "R")
 }
 \references{
 Lee, C. E., and Shao, X. (2017).

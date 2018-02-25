@@ -15,6 +15,11 @@ double inner_DCenter(int n, double *XX, double *YY);
 double inner_UCenter_boot(int n, double *W, double *M);
 double inner_DCenter_boot(int n, double *W, double *M);
 
+double **alloc_matrix(int n, int d);
+void free_matrix(double **M, int n);
+void Euclidean_dist(double *X, double **D, int n, int d);
+void reshape_demean(double *X, double **M, int n, int d);
+
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 ///// functions
 ////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -297,4 +302,70 @@ double inner_DCenter_boot(int n, double *W, double *M) {
   }
 
   return sum / n / n;
+}
+
+// allocate a matrix with n rows and d columns
+double **alloc_matrix(int n, int d) {
+  int i;
+  double **M;
+  M = Calloc(n, double *);
+
+  for (i = 0; i < n; i++) {
+    M[i] = Calloc(d, double);
+  }
+  
+  return M;
+}
+
+// free a matrix with n rows
+void free_matrix(double **M, int n) {
+  int i;
+
+  for (i = 0; i < n; i++) {
+    Free(M[i]);
+  }
+
+  Free(M);
+}
+
+// compute an n x n Euclidean distance matrix of an n x d matrix
+void Euclidean_dist(double *X, double **D, int n, int d) {
+  int i, j, k, a, b;
+  double sum, diff;
+
+  for (i = 1; i < n; i++) {
+    D[i][i] = 0.0;
+    a = i * d;
+    for (j = 0; j < i; j++) {
+      sum = 0.0;
+      b = j * d;
+      for (k = 0; k < d; k++) {
+        diff = *(X + a + k) - *(X + b + k);
+        sum += diff * diff;
+      }
+      D[i][j] = D[j][i] = sqrt(sum);
+    }
+  }
+}
+
+// reshape a vector with length nd to an n x d matrix in row order and demean it by column means
+void reshape_demean(double *X, double **M, int n, int d) {
+  int i, j;
+  double *sum;
+  sum = Calloc(d, double);
+
+  for (i = 0; i < n; i++) {
+    for (j = 0; j < d; j++) {
+      M[i][j] = *(X + j + i * d); 
+      sum[j] += *(X + j + i * d);
+    }
+  }
+
+  for (i = 0; i < n; i++) {
+    for (j = 0; j < d; j++) {
+      M[i][j] -= sum[j] / n;
+    }
+  }
+
+  Free(sum);
 }
